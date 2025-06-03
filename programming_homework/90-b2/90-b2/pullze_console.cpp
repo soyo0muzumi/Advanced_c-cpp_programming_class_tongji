@@ -1,4 +1,4 @@
-﻿/* 学号 2452757 姓名 xqj 班级 */
+
 
 #include <iostream>
 #include <iomanip>
