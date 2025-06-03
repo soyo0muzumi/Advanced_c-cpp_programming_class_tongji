@@ -1,4 +1,4 @@
-/* Ñ§ºÅ 2452757 ĞÕÃû xqj °à¼¶ */
+
 #include <iostream>
 #include <time.h>
 #include "pullze.h"
@@ -6,32 +6,32 @@ using namespace std;
 
 
 /***************************************************************************
-  º¯ÊıÃû³Æ£º
-  ¹¦    ÄÜ£º
-  ÊäÈë²ÎÊı£º
-  ·µ »Ø Öµ£º
-  Ëµ    Ã÷£º
+  å‡½æ•°åç§°ï¼š
+  åŠŸ    èƒ½ï¼š
+  è¾“å…¥å‚æ•°ï¼š
+  è¿” å› å€¼ï¼š
+  è¯´    æ˜ï¼š
 ***************************************************************************/
 
 void menu() {
 	cout << "---------------------------------------------------------\n";
-	cout << "A.ÄÚ²¿Êı×é£¬Ô­ÑùÊä³ö\n";
-	cout << "B.ÄÚ²¿Êı×é£¬Éú³ÉÌáÊ¾ĞĞÁĞ²¢Êä³ö" << endl;
-	cout << "C.ÄÚ²¿Êı×é£¬ÓÎÏ·°æ" << endl;
+	cout << "A.å†…éƒ¨æ•°ç»„ï¼ŒåŸæ ·è¾“å‡º\n";
+	cout << "B.å†…éƒ¨æ•°ç»„ï¼Œç”Ÿæˆæç¤ºè¡Œåˆ—å¹¶è¾“å‡º" << endl;
+	cout << "C.å†…éƒ¨æ•°ç»„ï¼Œæ¸¸æˆç‰ˆ" << endl;
 	cout << "--------------------------------------------------------" << endl;
-	cout << "D.n * nµÄ¿ò¼Ü(ÎŞ·Ö¸ôÏß)£¬Ô­ÑùÊä³ö" << endl;
-	cout << "E.n * nµÄ¿ò¼Ü(ÎŞ·Ö¸ôÏß)£¬º¬ÌáÊ¾ĞĞÁĞ" << endl;
-	cout << "F.n * nµÄ¿ò¼Ü(ÎŞ·Ö¸ôÏß)£¬ÏÔÊ¾³õÊ¼×´Ì¬£¬Êó±êÒÆ¶¯¿ÉÏÔÊ¾×ø±ê" << endl;
-	cout << "G.cmdÍ¼ĞÎ½çÃæÍêÕû°æ(ÎŞ·Ö¸ôÏß)" << endl;
+	cout << "D.n * nçš„æ¡†æ¶(æ— åˆ†éš”çº¿)ï¼ŒåŸæ ·è¾“å‡º" << endl;
+	cout << "E.n * nçš„æ¡†æ¶(æ— åˆ†éš”çº¿)ï¼Œå«æç¤ºè¡Œåˆ—" << endl;
+	cout << "F.n * nçš„æ¡†æ¶(æ— åˆ†éš”çº¿)ï¼Œæ˜¾ç¤ºåˆå§‹çŠ¶æ€ï¼Œé¼ æ ‡ç§»åŠ¨å¯æ˜¾ç¤ºåæ ‡" << endl;
+	cout << "G.cmdå›¾å½¢ç•Œé¢å®Œæ•´ç‰ˆ(æ— åˆ†éš”çº¿)" << endl;
 	cout << "--------------------------------------------------------" << endl;
-	cout << "H.n * nµÄ¿ò¼Ü(ÓĞ·Ö¸ôÏß)£¬Ô­ÑùÊä³ö" << endl;
-	cout << "I.n * nµÄ¿ò¼Ü(ÓĞ·Ö¸ôÏß)£¬º¬ÌáÊ¾ĞĞÁĞ" << endl;
-	cout << "J.n * nµÄ¿ò¼Ü(ÓĞ·Ö¸ôÏß)£¬ÏÔÊ¾³õÊ¼×´Ì¬£¬Êó±êÒÆ¶¯¿ÉÏÔÊ¾×ø±ê" << endl;
-	cout << "K.cmdÍ¼ĞÎ½çÃæÍêÕû°æ(ÓĞ·Ö¸ôÏß)" << endl;
+	cout << "H.n * nçš„æ¡†æ¶(æœ‰åˆ†éš”çº¿)ï¼ŒåŸæ ·è¾“å‡º" << endl;
+	cout << "I.n * nçš„æ¡†æ¶(æœ‰åˆ†éš”çº¿)ï¼Œå«æç¤ºè¡Œåˆ—" << endl;
+	cout << "J.n * nçš„æ¡†æ¶(æœ‰åˆ†éš”çº¿)ï¼Œæ˜¾ç¤ºåˆå§‹çŠ¶æ€ï¼Œé¼ æ ‡ç§»åŠ¨å¯æ˜¾ç¤ºåæ ‡" << endl;
+	cout << "K.cmdå›¾å½¢ç•Œé¢å®Œæ•´ç‰ˆ(æœ‰åˆ†éš”çº¿)" << endl;
 	cout << "--------------------------------------------------------" << endl;
-	cout << "Q.ÍË³ö" << endl;
+	cout << "Q.é€€å‡º" << endl;
 	cout << "-------------------------------------------------------- -" << endl;
-	cout << "[ÇëÑ¡Ôñ:]";
+	cout << "[è¯·é€‰æ‹©:]";
 }
 
 void option(char op, bool& isexit) {
@@ -102,7 +102,7 @@ void clear(int* arr) {
 }
 
 void calhint(int hint[][8], int* arr, int col, int& l, int& h) {
-	// ¼ÆËãĞĞÌáÊ¾
+	// è®¡ç®—è¡Œæç¤º
 	for (int k = 0; k < col; ++k) {
 		int ki = 0; int curpos = 0;
 		while (ki < col) {
@@ -120,7 +120,7 @@ void calhint(int hint[][8], int* arr, int col, int& l, int& h) {
 		l = max(l, curpos);
 	}
 
-	// ¼ÆËãÁĞÌáÊ¾ // ´ÓÏÂµ½ÉÏËã
+	// è®¡ç®—åˆ—æç¤º // ä»ä¸‹åˆ°ä¸Šç®—
 	for (int k = 15; k < col + 15; ++k) {
 		int ki = col - 1; int curpos = 0;
 		while (ki >= 0) {
@@ -141,7 +141,7 @@ void calhint(int hint[][8], int* arr, int col, int& l, int& h) {
 
 void input(int& col) {
 	while (1) {
-		cout << "ÇëÊäÈëÇøÓò´óĞ¡(5/10/15) £º ";
+		cout << "è¯·è¾“å…¥åŒºåŸŸå¤§å°(5/10/15) ï¼š ";
 		cin >> col;
 		if (col == 5 || col == 10 || col == 15)
 			break;
@@ -160,7 +160,7 @@ void end() {
 	char End[100];
 	while (1) {
 		cct_gotoxy(x, y);
-		cout << "±¾Ğ¡Ìâ½áÊø£¬ÇëÊäÈëEnd¼ÌĞø...    ";
+		cout << "æœ¬å°é¢˜ç»“æŸï¼Œè¯·è¾“å…¥Endç»§ç»­...    ";
 		int x1, y1;
 		cct_getxy(x1, y1);
 		cct_gotoxy(x1 - 4, y1);
@@ -168,7 +168,7 @@ void end() {
 		if (!strcmp(End, "End") || !strcmp(End, "end"))
 			break;
 		else {
-			cout << "ÊäÈë´íÎó£¬ÇëÖØĞÂÊäÈë";
+			cout << "è¾“å…¥é”™è¯¯ï¼Œè¯·é‡æ–°è¾“å…¥";
 		}
 	}
 }
@@ -179,11 +179,11 @@ bool judgeposition(int x, int y, int col, int l, int h, int sidedif, int& i, int
 	char s2[] = { "aabbccddeeffgghhiijjkkllmmnnoo" };
 	if (sidedif == 0) {
 		if ((x > 2 * (l + col + 4) - 1 || x < 2 * (l + 4)) || (y < h + 5 || y > h + col + 6)) {
-			cout << "[µ±Ç°¹â±ê] Î»ÖÃ·Ç·¨";
+			cout << "[å½“å‰å…‰æ ‡] ä½ç½®éæ³•";
 			return false;
 		}
 		else {
-			cout << "[µ±Ç°¹â±ê] " << s1[(y - h - 5)] << "ĞĞ" << s2[x - 2 * (l + 4)] << "ÁĞ    " << endl;
+			cout << "[å½“å‰å…‰æ ‡] " << s1[(y - h - 5)] << "è¡Œ" << s2[x - 2 * (l + 4)] << "åˆ—    " << endl;
 			return true;
 		}
 	}
@@ -192,12 +192,12 @@ bool judgeposition(int x, int y, int col, int l, int h, int sidedif, int& i, int
 			for (j = 0; j < col; ++j) {
 				if ((x < 2*(l+4)-1+6+i*8 && x >= 2*(l+4)+i*8) 
 					&& (y >= h+5+j*4 && y < h+j*4+5+3)) {
-					cout << "[µ±Ç°¹â±ê] " << s1[j] << "ĞĞ" << s2[i*2] << "ÁĞ    " << endl;
+					cout << "[å½“å‰å…‰æ ‡] " << s1[j] << "è¡Œ" << s2[i*2] << "åˆ—    " << endl;
 					return true;
 				}
 			}
 		}
-		cout << "[µ±Ç°¹â±ê] Î»ÖÃ·Ç·¨";
+		cout << "[å½“å‰å…‰æ ‡] ä½ç½®éæ³•";
 		return false;
 	}
 }
@@ -210,12 +210,12 @@ void mouse_keyboards_tool(int col, int l, int h, int sidedif) {
 
 	cct_enable_mouse();
 
-	/* ´òÓ¡³õÊ¼¹â±êÎ»ÖÃ[0,0] */
-	cct_setcursor(CURSOR_INVISIBLE);	//¹Ø±Õ¹â±ê
-	//		cout << "[µ±Ç°Êó±êÎ»ÖÃ] X:0  Y:0"; //´òÓ¡³õÊ¼Êó±êÎ»ÖÃ
+	/* æ‰“å°åˆå§‹å…‰æ ‡ä½ç½®[0,0] */
+	cct_setcursor(CURSOR_INVISIBLE);	//å…³é—­å…‰æ ‡
+	//		cout << "[å½“å‰é¼ æ ‡ä½ç½®] X:0  Y:0"; //æ‰“å°åˆå§‹é¼ æ ‡ä½ç½®
 
 	while (loop) {
-		/* ¶ÁÊó±ê/¼üÅÌ£¬·µ»ØÖµÎªÏÂÊö²Ù×÷ÖĞµÄÄ³Ò»ÖÖ, µ±Ç°Êó±êÎ»ÖÃÔÚ<X,Y>´¦ */
+		/* è¯»é¼ æ ‡/é”®ç›˜ï¼Œè¿”å›å€¼ä¸ºä¸‹è¿°æ“ä½œä¸­çš„æŸä¸€ç§, å½“å‰é¼ æ ‡ä½ç½®åœ¨<X,Y>å¤„ */
 		ret = cct_read_keyboard_and_mouse(X, Y, maction, keycode1, keycode2);
 
 		if (ret == CCT_MOUSE_EVENT) {
@@ -226,52 +226,52 @@ void mouse_keyboards_tool(int col, int l, int h, int sidedif) {
 				int i, j;
 				judgeposition(X, Y, col, l, h, sidedif,i,j);
 				break;
-			case MOUSE_LEFT_BUTTON_CLICK:			//°´ÏÂ×ó¼ü
-				cout << "¶Áµ½×ó¼ü" << endl;
+			case MOUSE_LEFT_BUTTON_CLICK:			//æŒ‰ä¸‹å·¦é”®
+				cout << "è¯»åˆ°å·¦é”®" << endl;
 				break;
-			case MOUSE_RIGHT_BUTTON_CLICK:			//°´ÏÂÓÒ¼ü
-				cout << "¶Áµ½ÓÒ¼ü" << endl;
+			case MOUSE_RIGHT_BUTTON_CLICK:			//æŒ‰ä¸‹å³é”®
+				cout << "è¯»åˆ°å³é”®" << endl;
 				break;
 			} //end of switch(maction)
 		} //end of if (CCT_MOUSE_EVENT)
 		else if (ret == CCT_KEYBOARD_EVENT) {
-			/* ×ªµ½µÚ9ĞĞ½øĞĞ´òÓ¡ */
+			/* è½¬åˆ°ç¬¬9è¡Œè¿›è¡Œæ‰“å° */
 			cct_gotoxy(12, col + h + 8 + sidedif *5*col/2);
 
 			switch (keycode1) {
 			case '\n':
 				loop = 0;
-				cout << "[¶Áµ½»Ø³µ¼ü]";
+				cout << "[è¯»åˆ°å›è½¦é”®]";
 				break;
 			case '\r':
 				loop = 0;
-				cout << "[¶Áµ½»Ø³µ¼ü]";
+				cout << "[è¯»åˆ°å›è½¦é”®]";
 				break;
 			case 224:
 				switch (keycode2) {
 				case KB_ARROW_UP:
-					cout << "[¶Áµ½ÉÏ¼ıÍ·]";
+					cout << "[è¯»åˆ°ä¸Šç®­å¤´]";
 					break;
 				case KB_ARROW_DOWN:
-					cout << "[¶Áµ½ÏÂ¼ıÍ·]";
+					cout << "[è¯»åˆ°ä¸‹ç®­å¤´]";
 					break;
 				case KB_ARROW_LEFT:
-					cout << "[¶Áµ½×ó¼ıÍ·]";
+					cout << "[è¯»åˆ°å·¦ç®­å¤´]";
 					break;
 				case KB_ARROW_RIGHT:
-					cout << "[¶Áµ½ÓÒ¼ıÍ·]";
+					cout << "[è¯»åˆ°å³ç®­å¤´]";
 					break;
 				}
 				break;
-			default:	//ÆäËû¼üÖ±½Ó´òÓ¡ASCIIÖµ
-				cout << "[¶Áµ½¼üÂë] :" << keycode1 << '/' << keycode2 << endl;
+			default:	//å…¶ä»–é”®ç›´æ¥æ‰“å°ASCIIå€¼
+				cout << "[è¯»åˆ°é”®ç ] :" << keycode1 << '/' << keycode2 << endl;
 				break;
 			}//end of swicth(keycode1)
-		}//end of else if(ret == CCT_KEYBOARD_EVENT£©
+		}//end of else if(ret == CCT_KEYBOARD_EVENTï¼‰
 	} //end of while(1)
 
-	cct_disable_mouse();	//½ûÓÃÊó±ê
-	cct_setcursor(CURSOR_VISIBLE_NORMAL);	//´ò¿ª¹â±ê
+	cct_disable_mouse();	//ç¦ç”¨é¼ æ ‡
+	cct_setcursor(CURSOR_VISIBLE_NORMAL);	//æ‰“å¼€å…‰æ ‡
 }
 
 bool check(int col, int* matrix, int* mymatrix, int sidedif, int hint[][8]) {
@@ -292,7 +292,7 @@ bool check(int col, int* matrix, int* mymatrix, int sidedif, int hint[][8]) {
 
 	for (int i = 0; i < col * col; ++i) {
 		if (matrix[i] != mymatrix[i]) {
-			cout << "[" << (char)('A' + i / col) << "]" << "ĞĞ" << "[" << (char)('a' + i % col) << "]" << "ÁĞ²»·ûºÏÒªÇó";
+			cout << "[" << (char)('A' + i / col) << "]" << "è¡Œ" << "[" << (char)('a' + i % col) << "]" << "åˆ—ä¸ç¬¦åˆè¦æ±‚";
 			return false;
 		}
 	}
@@ -301,7 +301,7 @@ bool check(int col, int* matrix, int* mymatrix, int sidedif, int hint[][8]) {
 }
 
 void draw_single(int X, int Y, int col, int l, int h, int* mymatrix, int* _mymatrix, int op, int color) {
-	char s0[][3] = { "©–","¡Á" };
+	char s0[][3] = { "ã€‡","Ã—" };
 	char s1[] = { "ABCDEFGHIJKLMNO" };
 	char s2[] = { "aabbccddeeffgghhiijjkkllmmnnoo" };
 	int pos = (s1[(Y - h - 5)] - 'A') * col + s2[X - 2 * (l + 4)] - 'a';
@@ -332,7 +332,7 @@ void draw_erase_square(int x, int y, int i, int j, int* mymatrix, int* _mymatrix
 		_mymatrix[pos] == 0 ? _mymatrix[pos] = 1 : _mymatrix[pos] = 0;
 		mymatrix[pos] = 0;
 		if (_mymatrix[pos] == 1)
-			draw_one_square(x, y, color, "¡Á");
+			draw_one_square(x, y, color, "Ã—");
 		else if (_mymatrix[pos] == 0)
 			erase_onesquare(x, y);
 	}
@@ -340,24 +340,24 @@ void draw_erase_square(int x, int y, int i, int j, int* mymatrix, int* _mymatrix
 		mymatrix[pos] == 0 ? mymatrix[pos] = 1 : mymatrix[pos] = 0;
 		_mymatrix[pos] = 0;
 		if (mymatrix[pos] == 1)
-			draw_one_square(x, y, color, "©–");
+			draw_one_square(x, y, color, "ã€‡");
 		else if (mymatrix[pos] == 0)
 			erase_onesquare(x, y);
 	}
 }
 
 void draw_one_square(int x, int y, int color, const char str[3], int color2) {
-	cct_showstr(x, y, "¨X", color, color2); x += 2;
-	cct_showstr(x, y, "¨T", color, color2); x += 2;
-	cct_showstr(x, y, "¨[", color, color2); x += 2;
+	cct_showstr(x, y, "â•”", color, color2); x += 2;
+	cct_showstr(x, y, "â•", color, color2); x += 2;
+	cct_showstr(x, y, "â•—", color, color2); x += 2;
 	x -= 6, y += 1;
-	cct_showstr(x, y, "¨U", color, color2); x += 2;
+	cct_showstr(x, y, "â•‘", color, color2); x += 2;
 	cct_showstr(x, y, str, color, color2); x += 2;
-	cct_showstr(x, y, "¨U", color, color2); x += 2;
+	cct_showstr(x, y, "â•‘", color, color2); x += 2;
 	x -= 6, y += 1;
-	cct_showstr(x, y, "¨^", color, color2); x += 2;
-	cct_showstr(x, y, "¨T", color, color2); x += 2;
-	cct_showstr(x, y, "¨a", color, color2); x += 2;
+	cct_showstr(x, y, "â•š", color, color2); x += 2;
+	cct_showstr(x, y, "â•", color, color2); x += 2;
+	cct_showstr(x, y, "â•", color, color2); x += 2;
 }
 
 void erase_onesquare(int x, int y) {
@@ -378,15 +378,15 @@ void adjust(int col, int l, int h, int* matrix, int* mymatrix, int* _mymatrix, i
 		else color = COLOR_RED;
 		if (mymatrix[pos] == 1) {
 			if (!sidedif)
-				cct_showstr(j * 2 + 2 * (l + 4), i + h + 5, "©–", color, COLOR_BLACK);
+				cct_showstr(j * 2 + 2 * (l + 4), i + h + 5, "ã€‡", color, COLOR_BLACK);
 			else
-				draw_one_square((l + 4) * 2 + j * 8, (i + 1) * 4 + h + 1, color, "©–");
+				draw_one_square((l + 4) * 2 + j * 8, (i + 1) * 4 + h + 1, color, "ã€‡");
 		}
 		if (_mymatrix[pos] == 1) {
 			if (!sidedif)
-				cct_showstr(j * 2 + 2 * (l + 4), i + h + 5, "¡Á", color, COLOR_BLACK);
+				cct_showstr(j * 2 + 2 * (l + 4), i + h + 5, "Ã—", color, COLOR_BLACK);
 			else
-				draw_one_square((l + 4) * 2 + j * 8, (i + 1) * 4 + h + 1, color, "¡Á");
+				draw_one_square((l + 4) * 2 + j * 8, (i + 1) * 4 + h + 1, color, "Ã—");
 		}
 	}
 }
@@ -403,7 +403,7 @@ void zmode(int col, int l, int h, int* matrix, bool isinputz, int sidedif) {
 						cct_showch(x, y, ' ', COLOR_HWHITE, color2, 2); x += 2;
 					}
 					else if (matrix[(i)*col + j * 5 + jk] != 0) {
-						cct_showstr(x, y, "©–", color1, color2);
+						cct_showstr(x, y, "ã€‡", color1, color2);
 						x += 2;
 					}
 				}
@@ -416,9 +416,9 @@ void zmode(int col, int l, int h, int* matrix, bool isinputz, int sidedif) {
 			for (int ik = 0; ik < col; ++ik) {
 				if (matrix[i * col + ik] == 1) {
 					if (!l)
-						draw_one_square(4 + ik * 8, i * 4 + 3, color1,"©–",color2);
+						draw_one_square(4 + ik * 8, i * 4 + 3, color1,"ã€‡",color2);
 					else
-						draw_one_square(2 * l + 8 + ik * 8, i * 4 + h + 5, color1, "©–",color2);
+						draw_one_square(2 * l + 8 + ik * 8, i * 4 + h + 5, color1, "ã€‡",color2);
 				}
 			}
 		}
@@ -439,12 +439,12 @@ void game_mouse_keyboards_tool(int col, int l, int h, int* mymatrix, int* matrix
 
 	cct_enable_mouse();
 
-	/* ´òÓ¡³õÊ¼¹â±êÎ»ÖÃ[0,0] */
-	cct_setcursor(CURSOR_INVISIBLE);	//¹Ø±Õ¹â±ê
-	//		cout << "[µ±Ç°Êó±êÎ»ÖÃ] X:0  Y:0"; //´òÓ¡³õÊ¼Êó±êÎ»ÖÃ
+	/* æ‰“å°åˆå§‹å…‰æ ‡ä½ç½®[0,0] */
+	cct_setcursor(CURSOR_INVISIBLE);	//å…³é—­å…‰æ ‡
+	//		cout << "[å½“å‰é¼ æ ‡ä½ç½®] X:0  Y:0"; //æ‰“å°åˆå§‹é¼ æ ‡ä½ç½®
 
 	while (loop) {
-		/* ¶ÁÊó±ê/¼üÅÌ£¬·µ»ØÖµÎªÏÂÊö²Ù×÷ÖĞµÄÄ³Ò»ÖÖ, µ±Ç°Êó±êÎ»ÖÃÔÚ<X,Y>´¦ */
+		/* è¯»é¼ æ ‡/é”®ç›˜ï¼Œè¿”å›å€¼ä¸ºä¸‹è¿°æ“ä½œä¸­çš„æŸä¸€ç§, å½“å‰é¼ æ ‡ä½ç½®åœ¨<X,Y>å¤„ */
 		ret = cct_read_keyboard_and_mouse(X, Y, maction, keycode1, keycode2);
 
 		if (ret == CCT_MOUSE_EVENT) {
@@ -454,7 +454,7 @@ void game_mouse_keyboards_tool(int col, int l, int h, int* mymatrix, int* matrix
 				cct_gotoxy(12, col + h + 8 + sidedif * 5 * col / 2);
 				judgeposition(X, Y, col, l, h, sidedif, i, j);
 				break;
-			case MOUSE_LEFT_BUTTON_CLICK:			//°´ÏÂ×ó¼ü
+			case MOUSE_LEFT_BUTTON_CLICK:			//æŒ‰ä¸‹å·¦é”®
 				cct_gotoxy(12, col + h + 8 + sidedif * 5 * col / 2);
 				if (judgeposition(X, Y, col, l, h, sidedif,i,j)) {
 					if (!sidedif)
@@ -463,7 +463,7 @@ void game_mouse_keyboards_tool(int col, int l, int h, int* mymatrix, int* matrix
 						draw_erase_square((l + 4) * 2 + i * 8, (j + 1) * 4 + h + 1,i,j,mymatrix,_mymatrix ,COLOR_HBLUE,0);
 					cct_gotoxy(12, col + h + 8 + sidedif * 5 * col / 2);
 					cct_setcolor(COLOR_BLACK, COLOR_HWHITE);
-					cout << "¶Áµ½×ó¼ü        " << endl;
+					cout << "è¯»åˆ°å·¦é”®        " << endl;
 				}
 				cct_gotoxy(12, col + h + 8 + sidedif * 5 * col / 2);
 				judgeposition(X, Y, col, l, h,sidedif,i,j);
@@ -473,7 +473,7 @@ void game_mouse_keyboards_tool(int col, int l, int h, int* mymatrix, int* matrix
 					cct_setcolor(COLOR_BLACK, COLOR_HWHITE);
 				}
 				break;
-			case MOUSE_RIGHT_BUTTON_CLICK:			//°´ÏÂÓÒ¼ü
+			case MOUSE_RIGHT_BUTTON_CLICK:			//æŒ‰ä¸‹å³é”®
 				cct_gotoxy(12, col + h + 8 + sidedif * 5 * col / 2);
 				if (judgeposition(X, Y, col, l, h, sidedif, i, j)) {
 					if (!sidedif)
@@ -482,7 +482,7 @@ void game_mouse_keyboards_tool(int col, int l, int h, int* mymatrix, int* matrix
 						draw_erase_square((l + 4) * 2 + i * 8, (j + 1) * 4 + h + 1, i, j, mymatrix, _mymatrix, COLOR_HRED,1);
 					cct_gotoxy(12, col + h + 8 + sidedif * 5 * col / 2);
 					cct_setcolor(COLOR_BLACK, COLOR_HWHITE);
-					cout << "¶Áµ½ÓÒ¼ü          " << endl;
+					cout << "è¯»åˆ°å³é”®          " << endl;
 				}
 				cct_gotoxy(12, col + h + 8 + sidedif * 5 * col / 2);
 				judgeposition(X, Y, col, l, h, sidedif, i, j);
@@ -501,26 +501,26 @@ void game_mouse_keyboards_tool(int col, int l, int h, int* mymatrix, int* matrix
 			case 'Q':
 				cct_gotoxy(12, col + h + 8 + sidedif * 5 * col / 2);
 				loop = 0;
-				cout << "[¶Áµ½Q/q, ÓÎÏ·½áÊø]";
+				cout << "[è¯»åˆ°Q/q, æ¸¸æˆç»“æŸ]";
 				break;
 			case 'q':
 				cct_gotoxy(12, col + h + 8 + sidedif * 5 * col / 2);
 				loop = 0;
-				cout << "[¶Áµ½Q/q, ÓÎÏ·½áÊø]";
+				cout << "[è¯»åˆ°Q/q, æ¸¸æˆç»“æŸ]";
 				break;
 			case 'Y':
 				cct_gotoxy(12, col + h + 8 + sidedif * 5 * col / 2);
 				if (check(col, matrix, mymatrix, sidedif, hint))
-					cout << "[Ìá½»³É¹¦]", loop = 0;
+					cout << "[æäº¤æˆåŠŸ]", loop = 0;
 				else
-					cout << ", Ìá½»Ê§°Ü";
+					cout << ", æäº¤å¤±è´¥";
 				break;
 			case 'y':
 				cct_gotoxy(12, col + h + 8 + sidedif * 5 * col / 2);
 				if (check(col, matrix, mymatrix, sidedif, hint))
-					cout << "[Ìá½»³É¹¦]", loop = 0;
+					cout << "[æäº¤æˆåŠŸ]", loop = 0;
 				else
-					cout << ", Ìá½»Ê§°Ü";
+					cout << ", æäº¤å¤±è´¥";
 				break;
 			case 'Z':
 				isinputz = !isinputz;
@@ -535,26 +535,26 @@ void game_mouse_keyboards_tool(int col, int l, int h, int* mymatrix, int* matrix
 			case 224:
 				switch (keycode2) {
 				case KB_ARROW_UP:
-					cout << "[¶Áµ½ÉÏ¼ıÍ·]";
+					cout << "[è¯»åˆ°ä¸Šç®­å¤´]";
 					break;
 				case KB_ARROW_DOWN:
-					cout << "[¶Áµ½ÏÂ¼ıÍ·]";
+					cout << "[è¯»åˆ°ä¸‹ç®­å¤´]";
 					break;
 				case KB_ARROW_LEFT:
-					cout << "[¶Áµ½×ó¼ıÍ·]";
+					cout << "[è¯»åˆ°å·¦ç®­å¤´]";
 					break;
 				case KB_ARROW_RIGHT:
-					cout << "[¶Áµ½ÓÒ¼ıÍ·]";
+					cout << "[è¯»åˆ°å³ç®­å¤´]";
 					break;
 				}
 				break;
-			default:	//ÆäËû¼üÖ±½Ó´òÓ¡ASCIIÖµ
-				cout << "[¶Áµ½¼üÂë] :" << keycode1 << '/' << keycode2 << endl;
+			default:	//å…¶ä»–é”®ç›´æ¥æ‰“å°ASCIIå€¼
+				cout << "[è¯»åˆ°é”®ç ] :" << keycode1 << '/' << keycode2 << endl;
 				break;
 			}//end of swicth(keycode1)
-		}//end of else if(ret == CCT_KEYBOARD_EVENT£©
+		}//end of else if(ret == CCT_KEYBOARD_EVENTï¼‰
 	} //end of while(1)
 
-	cct_disable_mouse();	//½ûÓÃÊó±ê
-	cct_setcursor(CURSOR_VISIBLE_NORMAL);	//´ò¿ª¹â±ê
+	cct_disable_mouse();	//ç¦ç”¨é¼ æ ‡
+	cct_setcursor(CURSOR_VISIBLE_NORMAL);	//æ‰“å¼€å…‰æ ‡
 }
