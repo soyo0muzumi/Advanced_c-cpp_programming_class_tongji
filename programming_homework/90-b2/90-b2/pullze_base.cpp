@@ -1,4 +1,4 @@
-/* Ñ§ºÅ 2452757 ĞÕÃû xqj °à¼¶ */
+
 
 #include <iostream>
 #include <iomanip>
@@ -9,14 +9,14 @@
 using namespace std;
 
 /***************************************************************************
-  º¯ÊıÃû³Æ£º
-  ¹¦    ÄÜ£º
-  ÊäÈë²ÎÊı£º
-  ·µ »Ø Öµ£º
-  Ëµ    Ã÷£º
+  å‡½æ•°åç§°ï¼š
+  åŠŸ    èƒ½ï¼š
+  è¾“å…¥å‚æ•°ï¼š
+  è¿” å› å€¼ï¼š
+  è¯´    æ˜ï¼š
 ***************************************************************************/
 
-void draw_line(int col, int l) { // »­±ß¿ò
+void draw_line(int col, int l) { // ç”»è¾¹æ¡†
 	if (l) {
 		for (int i = 0; i < l * 2 + 1; ++i)
 			cout << "-";
@@ -30,7 +30,7 @@ void draw_line(int col, int l) { // »­±ß¿ò
 
 
 void _draw_hint(int col, int l, int h, int hint[][8]) {
-	// ÉÏ±ß¿ò
+	// ä¸Šè¾¹æ¡†
 	for (int i = 0; i < l + 1; ++i) {
 		cout << "--";
 	}
@@ -54,7 +54,7 @@ void _draw_hint(int col, int l, int h, int hint[][8]) {
 		}
 		cout << endl;
 	}
-	// ÏÂ±ß¿ò
+	// ä¸‹è¾¹æ¡†
 	for (int i = 0; i < l + 1; ++i) {
 		cout << "--";
 	}
@@ -170,13 +170,13 @@ void __draw_matrix_game_z(int col, int l, int* matrix, int* mymatrix, int hint[]
 
 
 void show_basic_inner_arr() { // option A
-	// ĞĞºÅÓÃ´óĞ´£¬ÁĞºÅÓÃĞ¡Ğ´
+	// è¡Œå·ç”¨å¤§å†™ï¼Œåˆ—å·ç”¨å°å†™
 	int matrix[225] = { 0 };
-	int hint[30][8] = { 0 }; // 0~14±íÊ¾ĞĞ£¬15~29±íÊ¾ÁĞ
+	int hint[30][8] = { 0 }; // 0~14è¡¨ç¤ºè¡Œï¼Œ15~29è¡¨ç¤ºåˆ—
 	int col = 0;
 	input(col);
 	build_matrix(col, matrix);
-	cout << "³õÊ¼Êı×é£º" << endl;
+	cout << "åˆå§‹æ•°ç»„ï¼š" << endl;
 	draw_line(col, 0);
 
 	_draw_matrix(col, 0, 0, 0, matrix, hint);
@@ -189,11 +189,11 @@ void show_basic_inner_arr() { // option A
 
 void show_arr_and_hint() { // option B
 	int matrix[225] = {0};
-	int hint[30][8] = {0}; // 0~14±íÊ¾ĞĞ£¬15~29±íÊ¾ÁĞ
+	int hint[30][8] = {0}; // 0~14è¡¨ç¤ºè¡Œï¼Œ15~29è¡¨ç¤ºåˆ—
 	int col = 0;
 	input(col);
 	build_matrix(col, matrix);
-	cout << "³õÊ¼Êı×é£º" << endl;
+	cout << "åˆå§‹æ•°ç»„ï¼š" << endl;
 	int l = 0, h = 0;
 
 	calhint(hint, matrix, col, l, h);
@@ -207,23 +207,23 @@ void show_arr_and_hint() { // option B
 }
 
 void message() {
-	cout << "ÃüÁîĞÎÊ½£ºAa=µÈ¼ÛÓÚÍ¼ĞÎÓÎÏ·ÖĞÊó±ê×ó¼üÑ¡ÔñAaÎ»(Çø·Ö´óĞ¡Ğ´)" << endl;
-	cout << "             ²»ĞèÒªÖ§³ÖÍ¼ĞÎ½çÃæµÄÓÒ¼ü´ò²æ£¬ÔÙ´ÎÊäÈëAaÏàµ±ÓÚÇå³ı" << endl;
-	cout << "          X/x = ÍË³ö(ĞÂĞĞ½öÓĞX/x£¬²»·Ö´óĞ¡Ğ´)" << endl;
-	cout << "          Y/y = Ìá½»(ĞÂĞĞ½öÓĞY/y£¬²»·Ö´óĞ¡Ğ´)" << endl;	
-	cout << "          Z/z = ×÷±×(ĞÂĞĞ½öÓĞZ/z£¬²»·Ö´óĞ¡Ğ´)" << endl;	
-	cout << "          Ctrl+c Ç¿ÖÆÍË³ö" << endl;	
-	cout << "ÇëÊäÈë : ";	
+	cout << "å‘½ä»¤å½¢å¼ï¼šAa=ç­‰ä»·äºå›¾å½¢æ¸¸æˆä¸­é¼ æ ‡å·¦é”®é€‰æ‹©Aaä½(åŒºåˆ†å¤§å°å†™)" << endl;
+	cout << "             ä¸éœ€è¦æ”¯æŒå›¾å½¢ç•Œé¢çš„å³é”®æ‰“å‰ï¼Œå†æ¬¡è¾“å…¥Aaç›¸å½“äºæ¸…é™¤" << endl;
+	cout << "          X/x = é€€å‡º(æ–°è¡Œä»…æœ‰X/xï¼Œä¸åˆ†å¤§å°å†™)" << endl;
+	cout << "          Y/y = æäº¤(æ–°è¡Œä»…æœ‰Y/yï¼Œä¸åˆ†å¤§å°å†™)" << endl;	
+	cout << "          Z/z = ä½œå¼Š(æ–°è¡Œä»…æœ‰Z/zï¼Œä¸åˆ†å¤§å°å†™)" << endl;	
+	cout << "          Ctrl+c å¼ºåˆ¶é€€å‡º" << endl;	
+	cout << "è¯·è¾“å…¥ : ";	
 }
 
 void base_game_mode() {
 	int col = 0;
 	int matrix[225] = { 0 };
 	int mymatrix[225] = { 0 };
-	int hint[30][8] = { 0 }; // 0~14±íÊ¾ĞĞ£¬15~29±íÊ¾ÁĞ
+	int hint[30][8] = { 0 }; // 0~14è¡¨ç¤ºè¡Œï¼Œ15~29è¡¨ç¤ºåˆ—
 	input(col);
 	build_matrix(col, matrix);
-	cout << "³õÊ¼Êı×é£º" << endl;
+	cout << "åˆå§‹æ•°ç»„ï¼š" << endl;
 	int l = 0, h = 0;
 
 	calhint(hint, matrix, col, l, h);
@@ -249,7 +249,7 @@ void base_game_mode() {
 				mymatrix[(operation[0] - 'A') * col + (operation[1] - 'a')] = 1;
 			else if (mymatrix[(operation[0] - 'A') * col + (operation[1] - 'a')] == 1)
 				mymatrix[(operation[0] - 'A') * col + (operation[1] - 'a')] = 0;
-			cout << "ÊäÈë" << operation << "ºó:" << endl;
+			cout << "è¾“å…¥" << operation << "å:" << endl;
 			_draw_hint(col, l, h, hint);
 			if (inputz) 
 				__draw_matrix_game_z(col, l, matrix, mymatrix, hint);
@@ -262,18 +262,18 @@ void base_game_mode() {
 		}
 		else if (strcmp(operation, "y") == 0 || strcmp(operation, "Y") == 0) {
 			if (check(col, matrix, mymatrix,0,hint)) {
-				cout << "Ìá½»³É¹¦£¬ÓÎÏ·½áÊø" << endl;
+				cout << "æäº¤æˆåŠŸï¼Œæ¸¸æˆç»“æŸ" << endl;
 				break;
 			}
 		}
 		else if (strcmp(operation,"z") == 0 || strcmp(operation,"Z") == 0) {
 			inputz = !inputz;
-			cout << "ÊäÈëZ/zºó" << endl;
+			cout << "è¾“å…¥Z/zå" << endl;
 			_draw_hint(col, l, h, hint);
 			__draw_matrix_game_z(col, l, matrix, mymatrix, hint);
 		}
 		else {
-			cout << "ÊäÈë´íÎó" << endl;
+			cout << "è¾“å…¥é”™è¯¯" << endl;
 		}
 	}
 
